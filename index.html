@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Choose Biggest Number/style/main.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Click The Biggest Number</h2>
+        <div class="randomNums">
+            <div class="leftNum"><button value="" class="fBtn"></button></div>
+            <div class="rightNum"><button value="" class="sBtn"></button></div>
+        </div>
+        <div class="score">0</div>
+        <div class="correct"></div>
+    </div>
+    <script src="../Choose Biggest Number/dist/main.js"></script>
+    <!-- <script src="../typescript/dist/main.js"> -->
+        <!-- "use strict";
+let btns = document.querySelectorAll(".container .randomNums div button");
+let btn1 = document.querySelector(".container .randomNums div .fBtn");
+let btn2 = document.querySelector(".container .randomNums div .sBtn");
+let scoreBtn = document.querySelector(".container .score");
+let score = 0;
+function generateRandomNuumber1() {
+    let firstNum = Math.round(Math.random() * 100);
+    btn1.textContent = firstNum;
+    btn1.setAttribute("value",firstNum);
+    
+}
+function generateRandomNuumber2() {
+    let secondNum = Math.round(Math.random() * 100);
+    btn2.textContent = secondNum;
+    btn2.setAttribute("value",secondNum);
+}
+
+window.onload = generateRandomNuumber2();
+window.onload = generateRandomNuumber1();
+
+function compare1()
+{
+    ;
+    if((parseInt(btn1.getAttribute("value"))) > (parseInt(btn2.getAttribute("value"))))
+        {
+            
+            generateRandomNuumber1();
+            generateRandomNuumber2();
+            score++;
+            scoreBtn.textContent = score;
+            
+        }
+        else  if(score > 0)
+            {
+                generateRandomNuumber1();
+                generateRandomNuumber2();
+            score--;
+            scoreBtn.textContent = score;
+            }
+}
+
+
+function compare2()
+{
+    ;
+    if((parseInt(btn2.getAttribute("value"))) > (parseInt(btn1.getAttribute("value"))))
+        {
+
+            generateRandomNuumber1();
+            generateRandomNuumber2();
+            score++;
+            scoreBtn.textContent = score;
+        }else  if(score > 0)
+            {
+                generateRandomNuumber1();
+                generateRandomNuumber2();
+            score--;scoreBtn.textContent = score;
+
+
+            }
+}
+
+
+
+
+btn1.addEventListener("click",compare1);
+btn2.addEventListener("click",compare2);
+
+
+
+    </script> -->
+
+
+</body>
+</html>
